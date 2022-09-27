@@ -1,0 +1,5 @@
+/*
+mandelbrot.h
+
+This file contains function prototypes for functions defined in mandelbrot.c
+*/
