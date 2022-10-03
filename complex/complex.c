@@ -10,6 +10,9 @@ part, a*d + b*c with IMULT(a, b, c, d)
 */
 #include <assert.h>
 
+#define RMULT(a, b, c, d) a*c - b*d
+#define IMULT(a, b, c, d) a*d + b*c
+
 int main() {
     assert(RMULT(1, 2, 3, 4) == -5);
     assert(IMULT(1, 2, 3, 4) == 10);
