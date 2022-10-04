@@ -21,7 +21,17 @@ recursively, and collatzGoto is implemented with the goto statement.
 
 int collatzGoto(long unsigned int n) {}
 
-int collatzWhile(long unsigned int n) {}
+int collatzWhile(long unsigned int n) {
+
+  while (n != 1) {
+    if (n%2 == 0) {
+      n = n/2;
+    }
+    else {
+      n = n*3 + 1;
+    }
+      return n;
+}
 
 int collatzRecursive(long unsigned int n) {}
 
