@@ -7,7 +7,20 @@ takes three doubles and returns the median of them as a double.
 #include <stdio.h> /* printf */
 #include <assert.h> /* assert */
 
-double median3(double a, double b, double c) {}
+double median3(double a, double b, double c) {
+    if ((b >= a) && (a >= c)) 
+      return a;  
+    if ((c >= a) && (a >= b)) 
+      return a; 
+    if ((a >= b) && (b >= c)) 
+      return b; 
+    if ((c >= b) && (b >= a))
+      return b;
+    if ((a >= c) && (c >= b)) 
+      return c; 
+    if ((b >= c) && (c >= a)) 
+      return c;                                
+}
 
 int main() {
     assert(median3(0, 0, 0) == 0);
